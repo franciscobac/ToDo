@@ -1,1 +1,74 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  background: #3023ae;
+  background: -moz-linear-gradient(60deg, #c86dd7 0%, #3023ae 100%);
+  background: -webkit-linear-gradient(60deg, #c86dd7 0%, #3023ae 100%);
+  background: linear-gradient(60deg, #c86dd7 0%, #3023ae 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c86dd7', endColorstr='#3023ae', GradientType=1 );
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+  list-style: none;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);
+  box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);
+}
+
+li {
+  padding: 15px;
+  margin: 10px;
+  font-size: 1em;
+  font-style: italic;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+li > button {
+  float: right;
+  background-color: #fff;
+  font-size: 1em;
+  opacity: 0.6;
+  border: none;
+  transition: opacity 1s;
+}
+
+li > button:hover {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.title {
+  font-family: "Dancing Script", cursive;
+  font-size: 5em;
+  color: #fff;
+  text-shadow: 3px 5px #000;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.button {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1em;
+  padding-left: 50px;
+  padding-right: 50px;
+  transition: background-color 0.3s, color 0.3s;
+}

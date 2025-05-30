@@ -1,5 +1,5 @@
-        <h1 class="title animated jackInTheBox">{{ title }}</h1>
-        <ul class="animated flipInX" *ngIf="mode=='list'">
+        <h1 class="title animate__animated animate__jackInTheBox">{{ title }}</h1>
+        <ul class="animate__animated animate__flipInX" *ngIf="mode=='list'">
             <p class="text-center" *ngIf="todos.length==0"><small>Não têm nenhuma tarefa hoje</small></p>
             <li *ngFor="let todo of todos">
                 {{ todo.title }}
@@ -10,7 +10,7 @@
             </li>
         </ul>
 
-        <div id="modal" *ngIf="mode=='add'" class="animated flipInX">
+        <div id="modal" *ngIf="mode=='add'" class="animate__animated animate__flipInX">
             <h1 class="text-center">Nova tarefa</h1>
             <form [formGroup]="form">
                     <input type="text" placeholder="Titulo da tarefa" maxlength="60" formControlName="title">
@@ -24,11 +24,11 @@
             </form>
         </div>
 
-        <button class="add-button animated fadeInUp button" (click)="changeMode('add')" *ngIf="mode=='list'">
+        <button class="add-button animate__animated animate__fadeInUp button" (click)="changeMode('add')" *ngIf="mode=='list'">
             <i class="fa-solid fa-plus"></i>
             NOVA TAREFA
         </button>
-        <button class="add-button animated fadeInUp button" (click)="changeMode('list')" *ngIf="mode=='add'">
+        <button class="add-button animate__animated animate__fadeInUp button" (click)="changeMode('list')" *ngIf="mode=='add'">
             <i class="fa-solid fa-minus"></i>
             CANCELAR
         </button>
